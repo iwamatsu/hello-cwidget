@@ -1,0 +1,11 @@
+autoscan
+mv ./configure.scan ./configure.in 
+# vi configure.in 
+mv __configure.in configure.in
+# vi Makefile.am
+mv __Makefile.am Makefile.am
+touch NEWS README AUTHORS ChangeLog COPYING INSTALL 
+aclocal
+autoheader
+automake --add-missing
+autoconf

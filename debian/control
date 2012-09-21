@@ -1,0 +1,15 @@
+Source: hello-cwidget
+Section: devel
+Priority: extra
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Build-Depends: debhelper (>= 9.0.0), libcwidget-dev
+Standards-Version: 3.9.4
+Homepage: http://people.debian.org/~iwamatsu/debian-packaging-dojo/
+
+Package: hello-cwidget
+Architecture: any 
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Debian Packaging Hands-on sample program
+ This is sample program of Debian Hands-on with OSC2009
+ Tokyo/Spring and Debian Packaging Dojo.
+ This is very easy program that uses cwidget.
